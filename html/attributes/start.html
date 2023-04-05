@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Lesson</title>
+  </head>
+
+  <body>
+    <header> <!-- aggiunto header e intentazione h1 per la leggibilità -->
+      <h1>This is my Form</h1>
+    </header>
+    
+      <form>
+        <div id="disabled-button"><!-- aggiunto div per separare il bottone e aumentare la leggibilità-->
+          <label for="button">Disabled Button:</label>
+          <br>
+          <button name="button" disabled>Clicca Qui!</button>
+        </div>
+        
+        <br>
+        
+        <div id="select-number"><!-- aggiunto div per separare l'input number e aumentare la leggibilità-->
+          <label for="number">Choose your number:</label>
+          <br>
+          <input name="number" placeholder="0-100" type="number" step="2" min="0" max="100" autofocus  >
+        </div>
+
+        <br>
+          
+        <div id="select-game"><!-- aggiunto div per separare la checkbox e aumentare la leggibilità-->
+          <label>Select your favourite game:</label>
+          <br>
+          <input type="checkbox" name="Apex Legends">
+          <label for="Apex Legends">Apex Legends</label>
+          <br>
+          <input type="checkbox" name="Valorant">
+          <label for="Valorant">Valorant</label>
+          <br>
+          <input type="checkbox" name="Fallout 4" checked>
+          <label for="Fallout 4">Fallout 4</label>
+        </div> 
+        
+        <br>
+
+        <div id="birthdate"><!-- aggiunto div per separare il date selector e aumentare la leggibilità-->
+          <label for="birthdate">Select your birth year:</label>
+          <br>
+          <input type="date" name="birthdate">
+        </div>
+      </form>
+  </body>
+
+
+      
+</html>
