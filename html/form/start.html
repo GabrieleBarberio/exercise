@@ -52,10 +52,14 @@
           <!-- Selezione abbonamento -->
           <label for="plan">Seleziona il tuo abbonamento:</label>
           <select name="plan" id="plan">
-            <option value="free_plan">free</option>
-            <option value="1.99">1.99€</option>
-            <option value="4.99">4.99€</option>
-            <option value="9.99">9.99€</option>
+            <optgroup label="Piano gratuito">
+              <option value="free_plan">free</option>
+            </optgroup>
+            <optgroup label="Piani a pagamento">
+              <option value="1.99">1.99€</option>
+              <option value="4.99">4.99€</option>
+              <option value="9.99">9.99€</option>
+            </optgroup>
           </select>
           <br>
           <!--  check box pro plan -->
