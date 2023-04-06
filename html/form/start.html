@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <fieldset>
+      <legend>Registrati Qui:</legend>
+      <form action="#"> 
+        <div id="registration">
+          <!-- inserisci email  -->
+          <label for="email">Inserisci la tua email:</label>
+          <br>
+          <input type="email" id="email" placeholder="e.s. example@gmail.com" required>
+          
+          <br>
+          <!-- inserisci password -->
+          <label for="password">Inserisci la tua password:</label>
+          <input type="password" id="password" required>
+          
+          <br>
+          <!--  inserisci nome -->
+          <label for="first_name">Inserisci il tuo nome:</label>
+          <input type="text" id="first_name" placeholder="Nome" minlength="3" maxlength="15" pattern="[A-Za-Z]+" required>
+          
+          <br>
+          <!--  inserisci cognome  -->
+          <label for="last_name">Inserisci il tuo cognome:</label>
+          <input type="text" id="first_name" placeholder="Cognome" nilength="3" maxlength="20" pattern="[A-Za-z]+" required>
+          
+          <br>
+          <!-- data di nascita -->
+          <label for="bithdate">Inserisci la tua data di nascita:</label>
+          <input type="date" id="birthdate" required>
+          
+          <br>
+          <!-- numero di telefono -->
+          <label for="phonenumber">Inserisci il tuo numero di telefono:</label>
+          <input type="tel" id="phonenumber" pattern="[0-9]+" required>
+          
+          <br>
+          <!-- Selezione abbonamento -->
+          <label for="plan">Seleziona il tuo abbonamento:</label>
+          <select name="plan" id="plan">
+            <option value="free_plan">free</option>
+            <option value="1.99">1.99€</option>
+            <option value="4.99">4.99€</option>
+            <option value="9.99">9.99€</option>
+          </select>
+          <br>
+          <!--  check box pro plan -->
+          <label for="pro_plan">Pro Plan</label>
+          <input type="checkbox" name="pro_plan" id="pro_plan" value="selected-pro-plan"> 
+          <br>
+          <!-- carta di credito -->
+          <label for="cc">Inserisci il numero della tua carta di credito</label>
+          <input type="text" pattern="[0-9]+" minlength="16" maxlength="16" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+          <br>
+          <!-- cvc -->
+          <label for="cvc">CVC:</label>
+          <input type="text" pattern="[0-9]+" minlength="3" maxlength="3" required>
+          <br>
+          <!-- data di scadenza -->
+          <label for="scadenza">Data di scadenza:</label>
+          <input type="date" name="scadenza" required>        
+          <br>
+          
+          <label for="indirizzo-fatturazione">Indirizzo di fatturazione:</label>
+          <input type="text" id="indirizzo-fatturazione" required>
+          
+          <br>
+          <input type="submit">
+        </div>
+      </form>
+    </fieldset>
+    </body>
+</html>
